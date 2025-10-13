@@ -1,23 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/10 19:24:49 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 12:11:10 by cmacaroc         ###   ########.fr       */
+/*   Created: 2025/10/13 13:33:34 by cmacaroc          #+#    #+#             */
+/*   Updated: 2025/10/13 16:12:55 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_strlen.c"
 
-void ft_bzero(void *s, size_t n)
+char *ft_strrchr(const char *s, int c)
 {
-	while (n > 0)
-	{
-		(*(unsigned char *)s) = '\0';
-		s++;
-		n--;
-	}
+    int i;
+    int len;
+    
+    len = ft_strlen(s);
+    i = len; //starts from the end
+    while(i >= 0)
+    {
+        if(s[i] == (char)c)
+        {
+            return((char *)&s[i]);
+        }
+        i--;
+    }
+    return(0);
+}
+
+int main(void)
+{
+    const char s[] = "allo";
+    printf("%s", ft_strrchr(s, 'l'));
+    return(0);
 }

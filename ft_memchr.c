@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:14 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:27:37 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/13 15:15:22 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (((unsigned char *)s)[i] == (unsigned char)c)
-			return ((void *)(s + i));
+			return ((void *)((unsigned char *)s + i));
 		i++;
 	}
-	return (NULL);
+	return (0);
+}
+
+int main(void)
+{
+	int c = 'c';
+	const char s[] = "alloca";
+	printf("%p", ft_memchr(s, c, 8));
+	return (0);
 }
