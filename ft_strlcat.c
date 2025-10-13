@@ -6,40 +6,39 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:58:03 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 10:47:13 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/13 19:02:25 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_strlen.c"
 
-size_t ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-    size_t dstlen;
-    size_t i;
-    size_t tofill;
+	size_t	dstlen;
+	size_t	i;
+	size_t	tofill;
 
-    dstlen = ft_strlen(dst);
-    i = 0;
-    if (size > 0 && dstlen < size)
-    {
-        tofill = size - dstlen - 1;
-        while (i < tofill && src[i] != '\0')
-        {
-            dst[dstlen + i] = src[i];
-            i++;
-        }
-        dst[dstlen + i] = '\0';
-        return(dstlen + ft_strlen(src)); 
-    }
-    return (size + ft_strlen(src));
+	dstlen = ft_strlen(dst);
+	i = 0;
+	if (size > 0 && dstlen < size)
+	{
+		tofill = size - dstlen - 1;
+		while (i < tofill && src[i] != '\0')
+		{
+			dst[dstlen + i] = src[i];
+			i++;
+		}
+		dst[dstlen + i] = '\0';
+		return (dstlen + ft_strlen(src));
+	}
+	return (size + ft_strlen(src));
 }
 
-int main (void)
-{
-    char dst[] = "allo";
-    const char src[8] = "ezz";
-    int result = ft_strlcat(dst, src, 19);
-    printf("%d", result);
-    return (0);
-}
+// int main (void)
+// {
+//     char dst[] = "allo";
+//     const char src[8] = "ezz";
+//     int result = ft_strlcat(dst, src, 19);
+//     printf("%d", result);
+//     return (0);
+// }

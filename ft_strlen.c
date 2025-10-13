@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:22 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:52:06 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/13 19:02:51 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ size_t	ft_strlen(const char *str)
 	while (str[i] != '\0')
 	{
 		i++;
-		//str++;
 	}
 	return (i);
 }

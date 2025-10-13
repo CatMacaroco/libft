@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:27 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:53:33 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/13 19:07:22 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_tolower(int c)
 		c = c + 32;
 	return (c);
 }
+
+// int main (void)
+// {
+//     int c = 'A';
+//     printf("%c", ft_tolower(c));
+//     return (0);
+// }

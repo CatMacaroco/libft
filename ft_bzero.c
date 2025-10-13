@@ -6,13 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:24:49 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 12:11:10 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/13 18:23:27 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	while (n > 0)
 	{
