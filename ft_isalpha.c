@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:01 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 18:33:05 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/14 10:10:43 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,10 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
+
+// int main(void)
+// {
+//     int c = 9;
+//     printf("%d", ft_isalpha(c));
+//     return (0);
+// }

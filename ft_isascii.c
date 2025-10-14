@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:03 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:39:52 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/14 10:09:36 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     int c = 'a';
+//     printf("%d", ft_isascii(c));
+//     return (0);
+// }

@@ -1,29 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/10 19:25:06 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/14 10:08:10 by cmacaroc         ###   ########.fr       */
+/*   Created: 2025/10/14 11:38:55 by cmacaroc          #+#    #+#             */
+/*   Updated: 2025/10/14 11:59:11 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (c <= 9 && c >= 0)
+	size_t				i;
+	const unsigned char	*first;
+	const unsigned char	*second;
+
+	i = 0;
+	first = (const unsigned char *)s1;
+	second = (const unsigned char *)s2;
+	while (i < n)
 	{
-		return (1);
+		if (first[i] != second[i])
+		{
+			return (first[i] - second[i]);
+		}
+		i++;
 	}
 	return (0);
 }
 
 // int main(void)
 // {
-//     int c = 'a';
-//     printf("%d", ft_isdigit(c));
+//     char s1[] = "allo";
+//     char s2[] = "zllo";
+//     printf("%d", ft_memcmp(s1, s2, 7));
 //     return (0);
 // }

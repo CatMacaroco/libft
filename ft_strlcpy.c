@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:20 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:27:51 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/14 10:18:15 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
+
+// int main (void)
+// {
+//     char dst[] = "allo";
+//     const char src[8] = "ezz";
+//     int result = ft_strlcpy(dst, src, 19);
+//     printf("%d", result);
+//     return (0);
+// }

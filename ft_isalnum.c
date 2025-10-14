@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:24:58 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 18:29:47 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/14 10:11:57 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,10 @@ int	ft_isalnum(int c)
 	}
 	return (0);
 }
+
+// int main(void)
+// {
+//     int c = '9';
+//     printf("%d", ft_isalnum(c));
+//     return (0);
+// }
