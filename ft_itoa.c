@@ -6,33 +6,54 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:36:11 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/16 16:11:46 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/16 17:05:27 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int num_length(int n)
+{
+    int length;
+    
+    length = 0;
+    if (n <= 0)
+    {
+        length++;
+        n = -n; //makes it positive
+    }
+    while (n > 0)
+    {
+        n = n / 10;
+        length++;
+    }
+    return (length);
+}
+
 char *ft_itoa(int n)
 {
-    int i;
+    int length;
     char *str;
-    int sign;
-    int nb;
+    long nb;
 
-    i = 0;
-    sign = 1;
-    nb = 0;
-    str = (char *)malloc(sizeof(n) + 1);
-    while (nb >= 0)
+    length = num_length(n);
+    nb = n;
+    str = (char *)malloc(sizeof(char) * (length + 1));
+    if (!str)
     {
-        str[i] = (nb % 10) + '0';
-        i++;
+        return (0);
     }
-    if (n < 0)
+    str[length] = '\0';
+    while (nb < 0)
     {
-        sign = -sign;
+        str[0] = '-';
+        nb = -nb;
     }
-    
+    while (--length >= 0 && str[length] != '-')
+    {
+        str[length] = (nb % 10) + '0';
+        nb = nb / 10;
+    }
     return(str);
 }
 
