@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 13:33:34 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/16 12:47:26 by cmacaroc         ###   ########.fr       */
+/*   Created: 2025/10/16 15:53:35 by cmacaroc          #+#    #+#             */
+/*   Updated: 2025/10/16 16:05:35 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char **ft_split(char const *s, char c)
 {
-	int	i;
-	int	len;
+    int i;
 
-	len = ft_strlen(s);
-	i = len;
-	while (i >= 0)
-	{
-		if (s[i] == (char)c)
-		{
-			return ((char *)&s[i]);
-		}
-		i--;
-	}
-	return (0);
+    i = 0;
+    
+    return (ptr to the array of new strings, in this case 4 );
 }
 
-// int main(void)
-// {
-//     const char s[] = "allooo";
-//     printf("%s", ft_strrchr(s, 'l'));
-//     return(0);
-// }
+int main(void)
+{
+    char const s[] = "allo-sun-shine";
+    char c = '-';
+    printf("%s", ft_split(s, c));
+    return (0);
+}
