@@ -1,42 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 17:41:53 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/15 12:13:48 by cmacaroc         ###   ########.fr       */
+/*   Created: 2025/10/15 17:00:06 by cmacaroc          #+#    #+#             */
+/*   Updated: 2025/10/16 10:12:05 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	total_size;
 	size_t	i;
-	void	*ptr;
+	char	*ptr;
 
-	total_size = nmemb * size;
-	if (nmemb == 0 || size == 0)
-	{
-		return (0);
-	}
-	ptr = malloc(total_size);
 	i = 0;
-	while (i < total_size)
+	ptr = (char *)malloc(sizeof(char) * (len + 1));
+	while (s[start] != '\0' && i < len)
 	{
-		((unsigned char *)ptr)[i] = 0;
+		ptr[i] = s[start];
 		i++;
+		start++;
 	}
+	ptr[i] = '\0';
 	return (ptr);
 }
 
 // int main(void)
 // {
-//     size_t numbof_squares = 9;
-//     size_t size = 4;
-//     printf("%p", ft_calloc(numbof_squares, size));
+//     char const s[] = "allo";
+//     printf("%s", ft_substr(s, 1, 8));
 //     return (0);
 // }
