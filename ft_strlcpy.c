@@ -6,12 +6,14 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:20 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/14 10:18:15 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/17 15:46:24 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// cool function, dest is
+// @param hello this is pramaeter
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
