@@ -6,26 +6,26 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 12:20:13 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/17 17:26:20 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/17 19:39:57 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char const *ft_beginning(char const *s1, char const *set)
+char const	*ft_beginning(char const *s1, char const *set)
 {
-	size_t i;
-	size_t j;
-    
-    i = 0;
+	size_t	i;
+	size_t	j;
+
+	i = 0;
 	j = 0;
-	while(s1[i] != '\0')
+	while (s1[i] != '\0')
 	{
 		if (set[j] == '\0')
 		{
 			return (s1 + i);
 		}
-		if(s1[i] == set[j])
+		if (s1[i] == set[j])
 		{
 			i++;
 			j = 0;
@@ -38,20 +38,20 @@ char const *ft_beginning(char const *s1, char const *set)
 	return (s1 + i);
 }
 
-int ft_endchop(char const *s1, char const *set)
+int	ft_endchop(char const *s1, char const *set)
 {
-	size_t j;
-    size_t len;
-	
+	size_t	j;
+	size_t	len;
+
 	len = ft_strlen(s1);
 	j = 0;
-	while(len > 0)
+	while (len > 0)
 	{
 		if (set[j] == '\0')
 		{
 			return (len);
 		}
-		if(s1[len - 1] == set[j])
+		if (s1[len - 1] == set[j])
 		{
 			len--;
 			j = 0;
@@ -63,11 +63,11 @@ int ft_endchop(char const *s1, char const *set)
 	}
 	return (len);
 }
-	
-char *ft_strtrim(char const *s1, char const *set)
+
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    char *trimmed_str;
-	size_t len;
+	char	*trimmed_str;
+	size_t	len;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -75,13 +75,13 @@ char *ft_strtrim(char const *s1, char const *set)
 	len = ft_endchop(s1, set);
 	trimmed_str = malloc(sizeof(char) * (len + 1));
 	ft_strlcpy(trimmed_str, s1, len + 1);
-    return (trimmed_str);
+	return (trimmed_str);
 }
 
-int main(void)
-{
-    char const s1[] = ".bop.bop.";
-    char const set[] = ".";
-    printf("%s", ft_strtrim(s1, set));
-    return(0);
-}
+// int main(void)
+// {
+//     char const s1[] = ".bop.bop.";
+//     char const set[] = ".";
+//     printf("%s", ft_strtrim(s1, set));
+//     return(0);
+// }
