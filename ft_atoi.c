@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:24:44 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 18:22:44 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/17 14:13:49 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_atoi(const char *str)
 	{
 		i++;
 	}
-	while (str[i] == '+' || str[i] == '-')
+	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
 		{
@@ -43,7 +43,7 @@ int	ft_atoi(const char *str)
 
 // int main (void)
 // {
-// 	char *str = "   +---736jj99";
+// 	char *str = "   --736jj99";
 // 	int a = ft_atoi(str);
 // 	printf("%i", a);
 // 	return 0;
