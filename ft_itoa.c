@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 	length = num_length(n);
 	str = malloc(sizeof(char) * (length + 1));
 	if (!str)
-		return (0);
+		return (NULL);
 	str[length] = '\0';
 	if (n == -2147483648)
 	{
@@ -60,6 +60,6 @@ char	*ft_itoa(int n)
 // int main(void)
 // {
 //     int n = -2147483648;
-//     printf("%s", ft_itoa(n));
+//     printf("%s\n", ft_itoa(n));
 //     return (0);
 // }
