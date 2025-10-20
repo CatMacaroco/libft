@@ -21,6 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	len = ft_strlen(s);
 	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
 	if (!s || !f)
 		return (NULL);
 	while (i < len)
@@ -32,7 +34,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-//returns capital letters at even index numbers (2, 4, 6...)
+//returns capital letters at even index numbers (0, 2, 4, 6...)
 // char example (unsigned int i, char c)
 // {
 // 	if ( i % 2 == 0 && c>= 'a' && c <= 'z')
