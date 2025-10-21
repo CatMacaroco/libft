@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//returns a pointer to the storage space containing the copied string
 char	*ft_strdup(const char *s)
 {
 	char	*ptr;

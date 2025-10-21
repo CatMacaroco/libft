@@ -14,16 +14,19 @@
 
 static int	num_length(int n)
 {
-	int	length;
+	int		length;
+	long	nb;
 
+	nb = n;
 	length = 0;
-	if (n <= 0)
+	if (nb <= 0)
 	{
 		length++;
+		nb = -nb;
 	}
-	while (n > 0)
+	while (nb > 0)
 	{
-		n = n / 10;
+		nb = nb / 10;
 		length++;
 	}
 	return (length);
@@ -52,16 +55,14 @@ char	*ft_itoa(int n)
 	{
 		str[--length] = (nbr % 10) + '0';
 		nbr = nbr / 10;
-		//printf("%s\n", str);
-		//printf("%s\n", &str[length]);
 	}
 	return (str);
 }
 
 // int main(void)
 // {
-//     // int n = -2147483648;
-// 	int n = -3648;
+//     int n = -2147483648;
+// 	//int n = -3648;
 //     printf("%s\n", ft_itoa(n));
 //     return (0);
 // }
