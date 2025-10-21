@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:33:34 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/13 18:56:17 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:26:39 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i] == '\0')
+	if (c == '\0')
 	{
 		return ((char *)&s[i]);
 	}
@@ -32,8 +32,8 @@ char	*ft_strchr(const char *s, int c)
 
 // int main(void)
 // {
-//     int c = 'c';
-//     const char s[] = "alloca";
+//     int c = 'd';
+//     const char s[] = "adeus";
 //     printf("%s", ft_strchr(s, c));
 //     return (0);
 // }

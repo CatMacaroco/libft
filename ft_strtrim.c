@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 12:20:13 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/17 19:39:57 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:03:20 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s1 = ft_beginning(s1, set);
 	len = ft_endchop(s1, set);
 	trimmed_str = malloc(sizeof(char) * (len + 1));
+	if (!trimmed_str)
+		return (NULL);
 	ft_strlcpy(trimmed_str, s1, len + 1);
 	return (trimmed_str);
 }
