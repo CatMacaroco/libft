@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:36:11 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/21 15:08:23 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:15:30 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ char	*ft_itoa(int n)
 	{
 		str[--length] = (nbr % 10) + '0';
 		nbr = nbr / 10;
+		//printf("%s\n", str);
+		//printf("%s\n", &str[length]);
 	}
 	return (str);
 }
