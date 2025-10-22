@@ -6,12 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 12:20:13 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/21 15:03:20 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 16:16:37 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//allocate mem and returns a copy of ’s1’ with characters from ’set’ removed 
+//from the beginning and the end.
 char const	*ft_beginning(char const *s1, char const *set)
 {
 	size_t	i;
@@ -82,7 +83,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int main(void)
 // {
-//     char const s1[] = ".bop.bop.";
+//     char const s1[] = "...bop.bop.";
 //     char const set[] = ".";
 //     printf("%s", ft_strtrim(s1, set));
 //     return(0);

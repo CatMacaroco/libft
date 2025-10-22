@@ -6,12 +6,14 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:04:58 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/14 17:34:59 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:49:01 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//locates the first occurrence of string little in string big
+//find needle in haystack but only up to n chars len
+//stops either when the needle is found or when len characters are searched
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
@@ -40,10 +42,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 
-// int main(void)
-// {
-//     const char big[] = "allyaaaa";
-//     const char little[] = "ya";
-//     printf("%s", ft_strnstr(big, little, 8));
-//     return (0);
-// }
+int main(void)
+{
+    const char big[] = "allyaaaaa";
+    const char little[] = "ya";
+    printf("%s", ft_strnstr(big, little, 5));
+    return (0);
+}

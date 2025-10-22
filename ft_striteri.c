@@ -1,17 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:46:32 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/17 19:35:29 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:33:49 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//applies function f to each char of string s, passing its index to first arg
+//each char is passed by address& to 'f' so it can be modified if needed
+//f* lets you access or modify the value that the pointer points to
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	int	i;
@@ -27,10 +29,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	s[i] = '\0';
 }
 
-// void capitalize (unsigned int i, char *c)
+// void capitalize (unsigned int i, char *s)
 // {
-// 	if ( i % 2 == 0 && *c >= 'a' && *c <= 'z')
-// 		*c = *c - 32;
+// 	if ( i % 2 == 0 && *s >= 'a' && *s <= 'z')
+// 		*s = *s - 32;
 // }
 
 // int main(void)

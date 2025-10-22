@@ -1,17 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:15:15 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/14 11:38:10 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:33:35 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Applies the function f to each character of the string s, passing its index
+//as the first argument and the char itself as the second. A new string is 
+//created to store the results from the successive applications of f
+//f* lets you access or modify the value that the pointer points to
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
