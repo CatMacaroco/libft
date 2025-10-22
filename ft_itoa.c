@@ -6,13 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:36:11 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/21 18:15:30 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:27:07 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	num_length(int n)
+int	num_length(int n)
 {
 	int		length;
 	long	nb;
@@ -32,6 +32,9 @@ static int	num_length(int n)
 	return (length);
 }
 
+//Allocates memory and returns
+//a string representing the integer received as an
+//argument. Negative numbers must be handled
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -61,8 +64,8 @@ char	*ft_itoa(int n)
 
 // int main(void)
 // {
-//     int n = -2147483648;
-// 	//int n = -3648;
+//     //int n = -2147483648;
+// 	int n = -3648;
 //     printf("%s\n", ft_itoa(n));
 //     return (0);
 // }

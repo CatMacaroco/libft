@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:04:58 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/22 15:49:01 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:54:47 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 
-int main(void)
-{
-    const char big[] = "allyaaaaa";
-    const char little[] = "ya";
-    printf("%s", ft_strnstr(big, little, 5));
-    return (0);
-}
+// int main(void)
+// {
+//     const char big[] = "allyaaaaa";
+//     const char little[] = "ya";
+//     printf("%s", ft_strnstr(big, little, 5));
+//     return (0);
+// }

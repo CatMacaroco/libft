@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 15:53:35 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/16 16:05:35 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:54:17 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,9 @@ char	**ft_free(char **result, size_t count)
 	return (NULL);
 }
 
+//variables i to go through s, k to index substrings, delimiter_count is total 
+//substrings count, result is the array of substring pointers
+//returns the array of new strings resulting from the split
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
