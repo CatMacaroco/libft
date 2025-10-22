@@ -6,12 +6,12 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:00:06 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/21 15:07:27 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 13:03:08 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//allocates mem and returns a substring from the string s
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
@@ -41,6 +41,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // int main(void)
 // {
 //     char const s[] = "allo";
-//     printf("%s", ft_substr(s, 1, 3));
+//     printf("%s", ft_substr(s, 2, 3));
 //     return (0);
 // }

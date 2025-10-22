@@ -6,12 +6,14 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:21:22 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/21 17:42:16 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 12:14:13 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//copies n bytes from memory area src to memory area dest.
+//copies n bytes from memory area src to memory area dest
+//[src] ----> [ ... bytes ... ] ----> [src + n]
+//move backwards to avoid overwriting src data
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;

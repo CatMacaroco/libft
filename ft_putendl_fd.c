@@ -6,12 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:41:28 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/17 19:36:41 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 12:23:24 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//writes a string to the file descriptor fd
+//and adds a new line after the string
 void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;

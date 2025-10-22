@@ -6,12 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:24:58 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/14 10:11:57 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 11:32:08 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//checks for an alphanumeric char. equivalent to isalpha/isdigit
+//returns non zero if char is alphanum or 0 if not
 int	ft_isalnum(int c)
 {
 	if ((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))

@@ -6,12 +6,14 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:46:32 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/17 19:35:29 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 12:37:52 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//takes an int n and writes the digits using putchar
+//handles the smallest int -2147483648 because negating it causes overflow
+//handles negative by writing - sign and converting number to positive
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

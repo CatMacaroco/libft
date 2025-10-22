@@ -6,12 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:24:44 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/17 14:13:49 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 11:28:39 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//helps a computer read numbers that are written as text
+//and turn them into real numbers
 int	ft_atoi(const char *str)
 {
 	int	i;
@@ -44,6 +45,7 @@ int	ft_atoi(const char *str)
 // int main (void)
 // {
 // 	char *str = "   --736jj99";
+// 	char *str = " dd";
 // 	int a = ft_atoi(str);
 // 	printf("%i", a);
 // 	return 0;

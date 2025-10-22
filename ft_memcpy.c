@@ -6,12 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:06:34 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/22 10:42:27 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 12:02:14 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //copies n bytes from memory area src to memory area dest
+//returns a pointer to dest
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
