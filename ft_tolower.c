@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:25:27 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/22 11:41:32 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/22 14:56:18 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-int main (void)
-{
-    int c = 'A';
-    printf("%c", ft_tolower(c));
-    return (0);
-}
+// int main (void)
+// {
+//     int c = 'A';
+//     printf("%c", ft_tolower(c));
+//     return (0);
+// }
