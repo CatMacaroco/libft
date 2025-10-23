@@ -1,22 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:01:01 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/22 18:02:55 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:55:29 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-typedef struct s_list
-{
-	void *content;
-	struct s_list *next;
-} t_list;
 
 //counts number of nodes in a list
 int ft_lstsize(t_list *lst)
