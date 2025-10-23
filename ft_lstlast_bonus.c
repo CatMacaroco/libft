@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:01:01 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/23 15:31:29 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/23 16:09:24 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ t_list	*ft_lstlast(t_list *lst)
 	return (temp);
 }
 
-int main(void)
-{
-	t_list *temp;
-	temp = ft_lstnew("123");
-	printf("%s", *ft_lstlast(temp));
-	return (0); 
-}
+// int main(void)
+// {
+// 	t_list *temp;
+// 	temp = ft_lstnew("123");
+// 	printf("%s", *ft_lstlast(temp));
+// 	return (0); 
+// }

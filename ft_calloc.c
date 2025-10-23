@@ -6,7 +6,7 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:41:53 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/22 17:48:11 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:59:36 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	total_size = nmemb * size;
 	if (nmemb == 0 || size == 0)
 	{
-		return (NULL);
+		return (malloc(0));
 	}
 	ptr = malloc(total_size);
 	if (!ptr)
