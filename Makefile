@@ -6,6 +6,8 @@ ft_strrchr.c ft_itoa.c ft_memcpy.c ft_memmove.c ft_putchar_fd.c ft_putendl_fd.c 
 ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_strchr.c ft_striteri.c ft_strjoin.c \
 ft_strmapi.c ft_strtrim.c
 OBJECTS = $(SOURCES:.c=.o)
+SOURCES_BONUS = 
+OBJECTS_BONUS = $(SOURCES_BONUS:.c=.o)
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 
@@ -13,6 +15,9 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
+
+bonus: $(OBJECTS_BONUS) $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS) $(OBJECTS_BONUS)
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
@@ -26,4 +31,4 @@ fclean:	clean
 re:	fclean all
 
 .PHONY:
-	all clean fclean re
+	all clean fclean re bonus
