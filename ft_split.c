@@ -6,12 +6,13 @@
 /*   By: cmacaroc <cmacaroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 15:53:35 by cmacaroc          #+#    #+#             */
-/*   Updated: 2025/10/22 17:54:17 by cmacaroc         ###   ########.fr       */
+/*   Updated: 2025/10/23 17:37:36 by cmacaroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//counts the number of substrings you get after searching for the delimiter
 size_t	numb_substrings(char const *s, char c)
 {
 	size_t	count;
@@ -38,6 +39,7 @@ size_t	numb_substrings(char const *s, char c)
 	return (count);
 }
 
+//allocates memory for the new substring
 char	*allocate_substr(const char *start, size_t len)
 {
 	size_t	i;
@@ -56,6 +58,7 @@ char	*allocate_substr(const char *start, size_t len)
 	return (substr);
 }
 
+//frees the memory if the allocation didn't succeed
 char	**ft_free(char **result, size_t count)
 {
 	while (count > 0)
